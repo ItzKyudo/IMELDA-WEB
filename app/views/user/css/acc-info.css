@@ -1,0 +1,252 @@
+* {
+    padding: 0px;
+    margin: 0;
+}
+
+:root {
+    --header-bg-color: #76BBDC;
+    --header-sec-color: #4CA6D1;
+    --header-sec-color-hover: #3297C7;
+    --body-background-color: #f4f4f5;
+}
+
+
+header {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: var(--header-bg-color);
+    box-shadow: 0px 4px 8px black;
+}
+
+.header-div {
+    display: flex;
+    align-items: center;
+    width: 1260px;
+    height: 90px;
+    position: relative;
+}
+
+.header-div img {
+    height: 75px;
+    padding: 10px;
+}
+
+#header-logo-text {
+    font-size: 20px;
+    color: white;
+}
+
+
+#header-logo-text hr {
+    border: 2px solid white;
+    margin: 5px 0px 5px;    
+}
+
+#header-text-municipal {
+    font-size: 38px;
+}
+
+.cred-buttons {
+    padding: 5px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+
+.cred-buttons button {
+    width: 80px;
+    height: 30px;
+    border: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+.header-nav-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: var(--header-sec-color);
+    width: 100%;
+    height: 40px;
+}
+
+.header-nav-div ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    font-size: 18px;
+}
+
+.header-nav-div ul li {
+    cursor: pointer;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--body-background-color);
+
+}
+
+.body-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 70vh;
+}
+
+.body-win {
+    display: flex;
+    height: 500px;
+    width: 95%;
+    border-radius: 10px;
+    background-color: #efeff6;
+    box-shadow: 0px 4px 8px black;
+}
+
+.win-left-div {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 400px;
+    background-color: var(--header-bg-color);
+    border-radius: 10px 0px 0px 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#pfp-div {
+    border-radius: 100%;
+    border: 2px solid black;
+    width: 150px;
+    height: 150px;
+    background-image: url('/public/img/default-pfp.png'); /* Change Default Avatar Image here */
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+}
+
+.account-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+
+}
+
+.account-info input {
+    width: 200px;
+    height: 30px;
+    text-align: center;
+}
+
+#accinfo-submitBtn {
+    margin-top: 30px;
+    width: 75px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+#accinfo-submitBtn:active {
+    transform: scale(0.95);
+}
+
+#addr-brgy {
+    margin-top: 3px;
+    padding: 6px;
+    font-size: 14px;
+    border-radius: 5px;
+    width: 170px;
+}
+
+#profile-btn {
+    padding: 6px 10px;
+    background-color: var(--header-bg-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#profile-btn:hover {
+    background-color: var(--header-sec-color);
+}
+
+#cred-overlay-close {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 20px;
+    z-index: 16;
+}
+
+#cred-overlay-close img {
+    width: 15px;
+    height: 15px;
+}
+
+#overlay-logo img {
+    width: 130px;
+    height: 130px;
+}
+
+#overlay-logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 130px;
+    margin-top: -120px;
+    z-index: 15;
+}
+
+.change-cred-overlay {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.cred-overlay-win {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    background-color: var(--header-bg-color);
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#change-email-overlay,
+#change-passwd-overlay {
+    display: flex;
+    flex-direction: column;
+}
+
+#change-email-overlay input,
+#change-passwd-overlay input {
+    margin-bottom: 20px;
+}
+
+#email-submit-btn,
+#passwd-submit-btn {
+    padding: 10px;
+    align-self: center;
+}
+

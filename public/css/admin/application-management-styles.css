@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+.body-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    box-shadow: 0px 4px 8px black;
+    flex-grow: 1;
+    background-color: white;
+}
+
+.body-content {
+    display: flex;
+    align-items: center;
+    width: 1260px;
+    box-shadow: 0px 4px 8px black;
+    background-color: var(--surface-0);
+}
+
+.dash-sidebar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 230px;
+    height: 100%;
+    background-color: var(--surface-1);
+    color: var(--text-0);
+    box-shadow: 0px 0px 5px black;
+    text-align: center;
+}
+
+
+
+#dash-header {
+    margin: 60px 0px 60px 0px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#dash-greetcard {
+    margin-bottom: 60px;
+}
+
+#dash-qa-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#dash-qa li {
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#dash-qa li:hover {
+    text-decoration: underline;
+    color: var(--teal);
+    cursor: pointer;
+}
+
+#dash-logout {
+    margin: auto 0px 30px;
+}
+/* Ensure the body-content-wrapper takes up the full height */
+.body-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: calc(100vh - 150px); /* Adjust based on header/footer height */
+}
+
+/* Ensure content-cards takes up the remaining height */
+.content-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    flex-grow: 1; /* Allow it to grow and fill the space */
+}
+
+/* Left card: Allow it to grow */
+.widget-wrapper-card {
+    flex: 1 1 calc(50% - 10px); /* Changed from flex: 0 0 to allow growth */
+    min-height: 400px; /* Minimum height to prevent shrinking too much */
+    background-color: var(--base);
+    border-radius: 25px;
+    color: var(--text-1);
+    box-shadow: 1px 2px 4px black;
+    display: flex;
+    padding: 10px;
+}
+
+/* Right container: Allow it to grow */
+.widget-wrapper-card-group {
+    flex: 1 1 calc(30% - 10px); /* Changed from flex: 0 0 to allow growth */
+    min-height: 400px; /* Minimum height to prevent shrinking too much */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 25px;
+    color: var(--text-1);
+}
+
+/* Right container children: Distribute height evenly */
+.wwcg-1 {
+    flex: 1; /* Each child grows equally to fill the parent */
+    width: calc(100% - 20px);
+    background-color: var(--base);
+    border-radius: 25px;
+    color: var(--text-1);
+    box-shadow: 1px 2px 4px black;
+    display: flex;
+    padding: 10px;
+}
+
+.widget-card-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 10px; /* Ensure no additional padding on the content div */
+}
+
+.overlay-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 10;
+}
+
+.overlay-win {
+    width: 600px;
+    height: 500px;
+    background-color: var(--crust);
+    border-radius: 25px;
+    padding: 20px;
+}
+
+#overlay-close {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#overlay-logo img {
+    display: flex;
+    justify-self: center;
+    width: 150px;
+    height: 150px;
+    margin-top: -100px;
+}
+
+#overlay-close img {
+    width: 15px;
+    height: 15px;
+    margin-top: -50px;
+}
+
+#overlay-close img:hover {
+    cursor: pointer;
+}

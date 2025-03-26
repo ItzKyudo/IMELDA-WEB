@@ -1,0 +1,199 @@
+* {
+    padding: 0px;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: var(--mantle);
+    box-shadow: 0px 4px 8px black;
+
+}
+
+.header-div {
+    display: flex;
+    align-items: center;
+    width: 1260px;
+    height: 170px;
+    position: relative;
+}
+
+.header-div img {
+    height: 150px;
+    padding: 10px;
+}
+
+#header-logo-text {
+    margin-left: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+
+#header-logo-text hr {
+    border: 2px solid white;
+    margin: 5px 0px 5px;    
+}
+
+#header-text-municipal {
+    font-size: 38px;
+}
+
+.cred-buttons {
+    padding: 5px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+}
+
+.cred-buttons button {
+    width: 80px;
+    height: 30px;
+    border: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+
+}
+
+#loginBtn {
+    display: flex;
+    justify-content: center;
+    text-align: end;
+    align-items: center ;
+}
+
+.cred-buttons img {
+    width: 20px;
+    height: 20px;
+    margin: 0px;
+
+}
+
+.userinfo-buttons {
+    padding: 5px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flexbox;
+    align-items: center;
+}
+
+.userinfo-buttons button {
+    width: 80px;
+    height: 30px;
+    border: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+
+}
+
+.userinfo-buttons img {
+    width: 80px;
+    height: 80px;
+    margin: 0px;
+
+}
+
+.header-nav-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: var(--crust);
+    width: 100%;
+    height: 40px;
+}
+
+.header-nav-div ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    font-size: 18px;
+}
+
+.cred-overlay {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 15;
+}
+
+.cred-overlay-win {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background-color: var(--crust);
+    color: white;
+    border-radius: 10px;
+    z-index: 16;
+}
+
+#overlay-logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 130px;
+    margin-top: -120px;
+    z-index: 17;
+}
+
+#overlay-logo img {
+    width: 130px;
+    height: 130px;
+}
+
+#cred-overlay-close {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 20px;
+    z-index: 18;
+}
+
+#cred-overlay-close img {
+    width: 15px;
+    height: 15px;
+}
+
+#cred-overlay-close img:hover {
+    cursor: pointer;
+}
+
+.cred-overlay-login, .cred-overlay-signup {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.cred-overlay-login input, .cred-overlay-signup input {
+    width: 250px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#overlay-loginBtn, #overlay-signupBtn {
+    margin-top: 20px;
+    width: 60px;
+    border-radius: 7px;
+}
+
+#overlay-loginBtn:hover, #overlay-signupBtn:hover {
+    transform: scale(0.95);
+}
